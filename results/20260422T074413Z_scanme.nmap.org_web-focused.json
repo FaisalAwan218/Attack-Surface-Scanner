@@ -1,0 +1,128 @@
+{
+  "target": "scanme.nmap.org",
+  "profile": "web-focused",
+  "timestamp": "20260422T074413Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Apache httpd",
+        "version": "2.4.7",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://scanme.nmap.org",
+        "http://scanme.nmap.org"
+      ],
+      "technologies": [
+        {
+          "name": "Apache",
+          "version": "2.4.7"
+        },
+        {
+          "name": "Country",
+          "version": ""
+        },
+        {
+          "name": "Google-Analytics",
+          "version": "Universal"
+        },
+        {
+          "name": "HTML5",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "version": ""
+        },
+        {
+          "name": "IP",
+          "version": ""
+        },
+        {
+          "name": "Script",
+          "version": ""
+        },
+        {
+          "name": "Title",
+          "version": ""
+        }
+      ],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "error",
+      "targets_tested": [
+        "https://scanme.nmap.org",
+        "http://scanme.nmap.org"
+      ],
+      "paths_tested": 12,
+      "findings": [],
+      "errors": [
+        "https://scanme.nmap.org/admin: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /admin (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/login: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /login (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/dashboard: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /dashboard (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/uploads: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /uploads (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/backup: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /backup (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/config: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /config (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/phpinfo.php: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /phpinfo.php (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/.env: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /.env (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/robots.txt: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/sitemap.xml: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/api: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /api (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://scanme.nmap.org/test: HTTPSConnectionPool(host='scanme.nmap.org', port=443): Max retries exceeded with url: /test (Caused by NewConnectionError(\"HTTPSConnection(host='scanme.nmap.org', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+      ]
+    }
+  }
+}

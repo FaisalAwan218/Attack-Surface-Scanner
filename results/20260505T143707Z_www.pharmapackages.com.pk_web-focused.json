@@ -1,0 +1,51 @@
+{
+  "target": "www.pharmapackages.com.pk",
+  "profile": "web-focused",
+  "timestamp": "20260505T143707Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 0,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "error",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk",
+        "http://www.pharmapackages.com.pk"
+      ],
+      "technologies": [],
+      "errors": [
+        "Timeout while fingerprinting https://www.pharmapackages.com.pk.",
+        "Timeout while fingerprinting http://www.pharmapackages.com.pk."
+      ]
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "error",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk",
+        "http://www.pharmapackages.com.pk"
+      ],
+      "paths_tested": 1,
+      "findings": [],
+      "errors": [
+        "https://www.pharmapackages.com.pk/wp-login.php: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /wp-login.php (Caused by NameResolutionError(\"HTTPSConnection(host='www.pharmapackages.com.pk', port=443): Failed to resolve 'www.pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://www.pharmapackages.com.pk/wp-login.php: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /wp-login.php (Caused by NameResolutionError(\"HTTPConnection(host='www.pharmapackages.com.pk', port=80): Failed to resolve 'www.pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))"
+      ]
+    }
+  }
+}

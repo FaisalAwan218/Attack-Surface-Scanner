@@ -1,0 +1,128 @@
+{
+  "target": "https://www.pharmapackages.com.pk",
+  "profile": "web-focused",
+  "timestamp": "20260510T152750Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 0,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk"
+      ],
+      "technologies": [
+        {
+          "name": "Country",
+          "value": "UNITED STATES [US]",
+          "version": "UNITED STATES [US]"
+        },
+        {
+          "name": "Email",
+          "value": "info@pharmapackages.com.pk",
+          "version": "info@pharmapackages.com.pk"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "value": "LiteSpeed",
+          "version": "LiteSpeed"
+        },
+        {
+          "name": "IP",
+          "value": "64.20.34.139",
+          "version": "64.20.34.139"
+        },
+        {
+          "name": "JQuery",
+          "value": "3.7.1",
+          "version": "3.7.1"
+        },
+        {
+          "name": "LiteSpeed",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "MetaGenerator",
+          "value": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap",
+          "version": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        },
+        {
+          "name": "Script",
+          "value": "speculationrules",
+          "version": "speculationrules"
+        },
+        {
+          "name": "Script",
+          "value": "text/template",
+          "version": "text/template"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload",
+          "version": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "name": "Title",
+          "value": "Pharma Packages &#8211; Pharmaceutical Company",
+          "version": "Pharma Packages &#8211; Pharmaceutical Company"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc",
+          "version": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc"
+        },
+        {
+          "name": "WordPress",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "SAMEORIGIN",
+          "version": "SAMEORIGIN"
+        }
+      ],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "ok",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk"
+      ],
+      "paths_tested": 1,
+      "findings": [
+        {
+          "url": "https://www.pharmapackages.com.pk/wp-login.php",
+          "path": "wp-login.php",
+          "status_code": 200,
+          "reason": "OK",
+          "content_length": "",
+          "location": ""
+        }
+      ],
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "target": "127.0.0.1",
+  "profile": "web-focused",
+  "timestamp": "20260422T071748Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "no-findings",
+      "targets_tested": [
+        "https://127.0.0.1",
+        "http://127.0.0.1"
+      ],
+      "technologies": [],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "error",
+      "targets_tested": [
+        "https://127.0.0.1",
+        "http://127.0.0.1"
+      ],
+      "paths_tested": 12,
+      "findings": [],
+      "errors": [
+        "https://127.0.0.1/admin: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /admin (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/login: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /login (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/dashboard: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /dashboard (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/uploads: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /uploads (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/backup: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /backup (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/config: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /config (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/phpinfo.php: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /phpinfo.php (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/.env: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /.env (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/robots.txt: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/sitemap.xml: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/api: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /api (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "https://127.0.0.1/test: HTTPSConnectionPool(host='127.0.0.1', port=443): Max retries exceeded with url: /test (Caused by NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=443): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/admin: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /admin (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/login: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /login (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/dashboard: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /dashboard (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/uploads: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /uploads (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/backup: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /backup (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/config: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /config (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/phpinfo.php: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /phpinfo.php (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/.env: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /.env (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/robots.txt: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/sitemap.xml: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/api: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+        "http://127.0.0.1/test: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /test (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=80): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+      ]
+    }
+  }
+}

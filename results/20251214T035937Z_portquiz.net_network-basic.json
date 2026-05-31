@@ -1,0 +1,234 @@
+{
+  "target": "portquiz.net",
+  "profile": "network-basic",
+  "timestamp": "20251214T035937Z",
+  "data": {
+    "ports": [
+      {
+        "port": 23,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "telnet",
+        "product": "",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 25,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "smtp",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 53,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "domain",
+        "product": "ISC BIND",
+        "version": "9.18.39-0ubuntu0.22.04.2",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 110,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 111,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "rpcbind",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 113,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "ident",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 135,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "msrpc",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 139,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 143,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "imap",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 199,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "smux",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 256,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "fw1-secureremote",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 445,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "microsoft-ds",
+        "product": "",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 554,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "rtsp",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 587,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "submission",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 993,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "imaps",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 995,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "pop3s",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 1025,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "NFS-or-IIS",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 1723,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "pptp",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3306,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "mysql",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3389,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 5900,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "vnc",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8888,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "sun-answerbook",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 24,
+      "risk_counts": {
+        "HIGH": 3,
+        "MEDIUM": 5,
+        "LOW": 1,
+        "UNKNOWN": 15
+      }
+    }
+  }
+}

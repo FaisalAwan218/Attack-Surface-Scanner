@@ -1,0 +1,13 @@
+Attack Surface Scanner Report
+================================
+Target: scanme.nmap.org
+Profile: network-basic
+
+Risk Summary
+------------
+Total open ports: 7
+HIGH: 0
+MEDIUM: 3
+LOW: 1
+UNKNOWN: 3
+Attack surface score: 39 (LOW)

@@ -1,0 +1,198 @@
+{
+  "target": "www.gcwuf.edu.pk",
+  "profile": "network-basic",
+  "timestamp": "20251210T101427Z",
+  "data": {
+    "ports": [
+      {
+        "port": 20,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "ftp-data",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 21,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ftp",
+        "product": "Pure-FTPd",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 22,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ssh",
+        "product": "OpenSSH",
+        "version": "8.0",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 25,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 26,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "rsftp",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 110,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 143,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 465,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.99",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 587,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.99",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 993,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 995,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3306,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "mysql",
+        "product": "MariaDB",
+        "version": "11.4.9",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 5666,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8888,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "sun-answerbook",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 12000,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "cce4x",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 30000,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "ndmps",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 30718,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 30951,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 20,
+      "risk_counts": {
+        "HIGH": 1,
+        "MEDIUM": 4,
+        "LOW": 2,
+        "UNKNOWN": 13
+      }
+    }
+  }
+}

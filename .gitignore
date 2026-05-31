@@ -1,0 +1,16 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments (use .venv as the active one)
+.venv/
+venv/
+
+# Tooling and test cache
+.pytest_cache/
+.mypy_cache/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/*.code-workspace

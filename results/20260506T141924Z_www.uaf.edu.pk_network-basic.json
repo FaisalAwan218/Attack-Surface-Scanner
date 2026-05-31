@@ -1,0 +1,152 @@
+{
+  "target": "www.uaf.edu.pk",
+  "profile": "network-basic",
+  "timestamp": "20260506T141924Z",
+  "data": {
+    "ports": [
+      {
+        "port": 22,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "ssh",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 25,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "smtp",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "nginx",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "nginx",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 445,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "microsoft-ds",
+        "product": "",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 1947,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "sentinelsrm",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 2020,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "xinupageserver",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3000,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Node.js Express framework",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3001,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "nessus",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 5051,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "ida-agent",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8081,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "blackice-icecap",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8082,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "blackice-alerts",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 12,
+      "risk_counts": {
+        "HIGH": 1,
+        "MEDIUM": 2,
+        "LOW": 2,
+        "UNKNOWN": 7
+      },
+      "attack_surface_score": {
+        "value": 66,
+        "level": "MEDIUM",
+        "method": "weighted-port-risk"
+      }
+    },
+    "diff": {
+      "summary": {
+        "current_open_ports": 5,
+        "previous_open_ports": 5,
+        "new_ports_open": 0,
+        "new_ports": 0,
+        "closed_ports": 0,
+        "changed_services": 0
+      },
+      "current_open_ports": 5,
+      "previous_open_ports": 5,
+      "new_ports_open": 0,
+      "new_ports": [],
+      "closed_ports": [],
+      "changed_services": []
+    },
+    "baseline": {
+      "timestamp": "20260506T141644Z",
+      "profile": "network-basic",
+      "target": "www.uaf.edu.pk"
+    }
+  }
+}

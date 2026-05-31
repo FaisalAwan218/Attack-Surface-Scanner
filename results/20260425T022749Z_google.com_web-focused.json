@@ -1,0 +1,219 @@
+{
+  "target": "google.com",
+  "profile": "web-focused",
+  "timestamp": "20260425T022749Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "gws",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "gws",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://google.com",
+        "http://google.com"
+      ],
+      "technologies": [
+        {
+          "name": "Cookies",
+          "value": "AEC",
+          "version": "AEC"
+        },
+        {
+          "name": "Cookies",
+          "value": "NID",
+          "version": "NID"
+        },
+        {
+          "name": "Cookies",
+          "value": "__Secure-STRP",
+          "version": "__Secure-STRP"
+        },
+        {
+          "name": "Country",
+          "value": "UNITED STATES [US]",
+          "version": "UNITED STATES [US]"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HttpOnly",
+          "value": "AEC",
+          "version": "AEC"
+        },
+        {
+          "name": "HttpOnly",
+          "value": "NID",
+          "version": "NID"
+        },
+        {
+          "name": "HTTPServer",
+          "value": "gws",
+          "version": "gws"
+        },
+        {
+          "name": "IP",
+          "value": "142.250.202.238",
+          "version": "142.250.202.238"
+        },
+        {
+          "name": "IP",
+          "value": "142.251.153.119",
+          "version": "142.251.153.119"
+        },
+        {
+          "name": "RedirectLocation",
+          "value": "http://www.google.com/",
+          "version": "http://www.google.com/"
+        },
+        {
+          "name": "Script",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "Title",
+          "value": "301 Moved",
+          "version": "301 Moved"
+        },
+        {
+          "name": "Title",
+          "value": "Google",
+          "version": "Google"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "content-security-policy-report-only",
+          "version": "content-security-policy-report-only"
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "SAMEORIGIN",
+          "version": "SAMEORIGIN"
+        },
+        {
+          "name": "X-XSS-Protection",
+          "value": "0",
+          "version": "0"
+        }
+      ],
+      "errors": [
+        "Timeout while fingerprinting https://google.com."
+      ]
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "ok",
+      "targets_tested": [
+        "https://google.com",
+        "http://google.com"
+      ],
+      "paths_tested": 12,
+      "findings": [
+        {
+          "url": "http://google.com/dashboard",
+          "path": "dashboard",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "229",
+          "location": "https://www.google.com/dashboard"
+        },
+        {
+          "url": "http://google.com/robots.txt",
+          "path": "robots.txt",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "230",
+          "location": "https://www.google.com/robots.txt"
+        },
+        {
+          "url": "http://google.com/sitemap.xml",
+          "path": "sitemap.xml",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "231",
+          "location": "https://www.google.com/sitemap.xml"
+        },
+        {
+          "url": "https://google.com/dashboard",
+          "path": "dashboard",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "229",
+          "location": "https://www.google.com/dashboard"
+        },
+        {
+          "url": "https://google.com/robots.txt",
+          "path": "robots.txt",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "230",
+          "location": "https://www.google.com/robots.txt"
+        },
+        {
+          "url": "https://google.com/sitemap.xml",
+          "path": "sitemap.xml",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "231",
+          "location": "https://www.google.com/sitemap.xml"
+        }
+      ],
+      "errors": []
+    }
+  }
+}

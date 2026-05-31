@@ -1,0 +1,62 @@
+{
+  "target": "scanme.nmap.org",
+  "profile": "web-focused",
+  "timestamp": "20260401T114010Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Apache httpd",
+        "version": "2.4.7",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      }
+    },
+    "web": {
+      "enabled": false,
+      "tool": "whatweb",
+      "status": "unavailable",
+      "error": "WhatWeb is not installed or not available in PATH.",
+      "targets_tested": [],
+      "technologies": []
+    }
+  }
+}

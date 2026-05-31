@@ -1,0 +1,17 @@
+{
+  "target": "www.ggogle.com",
+  "profile": "network-basic",
+  "timestamp": "20260401T104657Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      }
+    }
+  }
+}

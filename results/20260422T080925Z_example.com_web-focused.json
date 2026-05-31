@@ -1,0 +1,198 @@
+{
+  "target": "example.com",
+  "profile": "web-focused",
+  "timestamp": "20260422T080925Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://example.com",
+        "http://example.com"
+      ],
+      "technologies": [
+        {
+          "name": "Allow",
+          "value": "GET, HEAD",
+          "version": "GET, HEAD"
+        },
+        {
+          "name": "Country",
+          "value": "RESERVED [ZZ]",
+          "version": "RESERVED [ZZ]"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "value": "cloudflare",
+          "version": "cloudflare"
+        },
+        {
+          "name": "IP",
+          "value": "172.66.147.243",
+          "version": "172.66.147.243"
+        },
+        {
+          "name": "Title",
+          "value": "Example Domain",
+          "version": "Example Domain"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "cf-cache-status,cf-ray",
+          "version": "cf-cache-status,cf-ray"
+        }
+      ],
+      "errors": [],
+      "raw_entries": [
+        {
+          "target": "https://example.com",
+          "http_status": 200,
+          "request_config": {
+            "headers": {
+              "User-Agent": "WhatWeb/0.6.4"
+            }
+          },
+          "plugins": {
+            "Allow": {
+              "module": [
+                "GET, HEAD"
+              ]
+            },
+            "Country": {
+              "string": [
+                "RESERVED"
+              ],
+              "module": [
+                "ZZ"
+              ]
+            },
+            "HTML5": {},
+            "HTTPServer": {
+              "string": [
+                "cloudflare"
+              ]
+            },
+            "IP": {
+              "string": [
+                "172.66.147.243"
+              ]
+            },
+            "Title": {
+              "string": [
+                "Example Domain"
+              ]
+            },
+            "UncommonHeaders": {
+              "string": [
+                "cf-cache-status,cf-ray"
+              ]
+            }
+          }
+        },
+        {
+          "target": "http://example.com",
+          "http_status": 200,
+          "request_config": {
+            "headers": {
+              "User-Agent": "WhatWeb/0.6.4"
+            }
+          },
+          "plugins": {
+            "Allow": {
+              "module": [
+                "GET, HEAD"
+              ]
+            },
+            "Country": {
+              "string": [
+                "RESERVED"
+              ],
+              "module": [
+                "ZZ"
+              ]
+            },
+            "HTML5": {},
+            "HTTPServer": {
+              "string": [
+                "cloudflare"
+              ]
+            },
+            "IP": {
+              "string": [
+                "172.66.147.243"
+              ]
+            },
+            "Title": {
+              "string": [
+                "Example Domain"
+              ]
+            },
+            "UncommonHeaders": {
+              "string": [
+                "cf-cache-status,cf-ray"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

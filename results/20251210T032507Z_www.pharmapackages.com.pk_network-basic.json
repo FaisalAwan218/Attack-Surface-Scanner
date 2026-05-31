@@ -1,0 +1,126 @@
+{
+  "target": "www.pharmapackages.com.pk",
+  "profile": "network-basic",
+  "timestamp": "20251210T032507Z",
+  "data": {
+    "ports": [
+      {
+        "port": 21,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ftp",
+        "product": "Pure-FTPd",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 22,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ssh",
+        "product": "OpenSSH",
+        "version": "7.4",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 53,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "domain",
+        "product": "PowerDNS Authoritative Server",
+        "version": "4.9.2",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 110,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 143,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 465,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.98.1",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 587,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.98.1",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 993,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 995,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3306,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "mysql",
+        "product": "MariaDB",
+        "version": "5.5.5-10.6.20",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 12,
+      "risk_counts": {
+        "HIGH": 1,
+        "MEDIUM": 4,
+        "LOW": 2,
+        "UNKNOWN": 5
+      }
+    }
+  }
+}

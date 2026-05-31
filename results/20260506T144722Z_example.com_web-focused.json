@@ -1,0 +1,113 @@
+{
+  "target": "example.com",
+  "profile": "web-focused",
+  "timestamp": "20260506T144722Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Cloudflare http proxy",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://example.com",
+        "http://example.com"
+      ],
+      "technologies": [
+        {
+          "name": "Allow",
+          "value": "GET, HEAD",
+          "version": "GET, HEAD"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "value": "cloudflare",
+          "version": "cloudflare"
+        },
+        {
+          "name": "IP",
+          "value": "2606:4700:10::ac42:93f3",
+          "version": "2606:4700:10::ac42:93f3"
+        },
+        {
+          "name": "Title",
+          "value": "Example Domain",
+          "version": "Example Domain"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "cf-cache-status,cf-ray",
+          "version": "cf-cache-status,cf-ray"
+        }
+      ],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "no-findings",
+      "targets_tested": [
+        "https://example.com",
+        "http://example.com"
+      ],
+      "paths_tested": 12,
+      "findings": [],
+      "errors": []
+    }
+  }
+}

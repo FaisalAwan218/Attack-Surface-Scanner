@@ -1,0 +1,22 @@
+Attack Surface Scanner Report
+================================
+Target: example.com
+Profile: network-basic
+
+Risk Summary
+------------
+Total open ports: 4
+HIGH: 0
+MEDIUM: 0
+LOW: 2
+UNKNOWN: 2
+Attack surface score: 16 (LOW)
+
+Port Details
+------------
+port/proto | state | service | product | version | risk
+-------------------------------------------------------
+80/tcp | open | http | Cloudflare http proxy |  | LOW
+443/tcp | open | http | Cloudflare http proxy |  | LOW
+8080/tcp | open | http | Cloudflare http proxy |  | UNKNOWN
+8443/tcp | open | http | Cloudflare http proxy |  | UNKNOWN

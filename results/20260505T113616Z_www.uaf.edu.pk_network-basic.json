@@ -1,0 +1,140 @@
+{
+  "target": "www.uaf.edu.pk",
+  "profile": "network-basic",
+  "timestamp": "20260505T113616Z",
+  "data": {
+    "ports": [
+      {
+        "port": 22,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "ssh",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 25,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "smtp",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 53,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "nginx",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "nginx",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 1947,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "sentinelsrm",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 2020,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Monkey httpd",
+        "version": "1.8.5",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 2525,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "ms-v-worlds",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3000,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Node.js Express framework",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 3001,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "nessus",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 5051,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "ida-agent",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8081,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "blackice-icecap",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8082,
+        "protocol": "tcp",
+        "state": "filtered",
+        "service": "blackice-alerts",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 13,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 3,
+        "LOW": 2,
+        "UNKNOWN": 8
+      },
+      "attack_surface_score": {
+        "value": 67,
+        "level": "MEDIUM",
+        "method": "weighted-port-risk"
+      }
+    }
+  }
+}

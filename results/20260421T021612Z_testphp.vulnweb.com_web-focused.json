@@ -1,0 +1,67 @@
+{
+  "target": "testphp.vulnweb.com",
+  "profile": "web-focused",
+  "timestamp": "20260421T021612Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 0,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": false,
+      "tool": "whatweb",
+      "status": "unavailable",
+      "error": "WhatWeb is not installed or not available in PATH.",
+      "targets_tested": [],
+      "technologies": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "error",
+      "targets_tested": [
+        "https://testphp.vulnweb.com",
+        "http://testphp.vulnweb.com"
+      ],
+      "paths_tested": 12,
+      "findings": [],
+      "errors": [
+        "https://testphp.vulnweb.com/admin: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /admin (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7ad9550>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/login: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /login (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7aa7110>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/dashboard: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /dashboard (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7aa79d0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/uploads: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /uploads (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7aa7c50>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/backup: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /backup (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7aa7ed0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/config: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /config (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78190>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/phpinfo.php: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /phpinfo.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78410>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/.env: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /.env (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78690>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/robots.txt: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78910>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/sitemap.xml: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78b90>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/api: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f78e10>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "https://testphp.vulnweb.com/test: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: /test (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x190f7f79090>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/admin: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /admin (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7ada900>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/login: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /login (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7f79450>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/dashboard: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /dashboard (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7f796d0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/uploads: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /uploads (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7ae1cd0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/backup: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /backup (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7ae1f30>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/config: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /config (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7ae4cb0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/phpinfo.php: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /phpinfo.php (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7af3020>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/.env: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /.env (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7af3570>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/robots.txt: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7af39b0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/sitemap.xml: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7af3df0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/api: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7fc0270>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))",
+        "http://testphp.vulnweb.com/test: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: /test (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x190f7fc06b0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=5)'))"
+      ]
+    }
+  }
+}

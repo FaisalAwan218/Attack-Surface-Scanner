@@ -1,0 +1,22 @@
+{
+  "target": "https://www.example.com",
+  "profile": "network-basic",
+  "timestamp": "20260426T022825Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 0,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "target": "www.google.com",
+  "profile": "network-basic",
+  "timestamp": "20260401T104828Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "gws",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "gws",
+        "version": "",
+        "risk": "LOW"
+      }
+    ],
+    "summary": {
+      "total_ports": 2,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 0
+      }
+    }
+  }
+}

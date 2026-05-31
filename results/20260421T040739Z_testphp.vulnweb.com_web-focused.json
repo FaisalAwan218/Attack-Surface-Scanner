@@ -1,0 +1,38 @@
+{
+  "target": "testphp.vulnweb.com",
+  "profile": "web-focused",
+  "timestamp": "20260421T040739Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 0,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "header-fallback",
+      "status": "error",
+      "targets_tested": [
+        "http://testphp.vulnweb.com",
+        "https://testphp.vulnweb.com"
+      ],
+      "technologies": [],
+      "errors": [
+        "http://testphp.vulnweb.com: HTTPConnectionPool(host='testphp.vulnweb.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPConnection(host='testphp.vulnweb.com', port=80) at 0x1e61bb297f0>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=10)'))",
+        "https://testphp.vulnweb.com: HTTPSConnectionPool(host='testphp.vulnweb.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='testphp.vulnweb.com', port=443) at 0x1e61bb29d30>, 'Connection to testphp.vulnweb.com timed out. (connect timeout=10)'))"
+      ],
+      "note": "WhatWeb unavailable; used HTTP header fallback fingerprinting.",
+      "error": "WhatWeb is not installed or not available in PATH."
+    }
+  }
+}

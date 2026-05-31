@@ -1,0 +1,81 @@
+{
+  "target": "www.gsk.com",
+  "profile": "network-basic",
+  "timestamp": "20260506T030527Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "AkamaiGHost",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "AkamaiGHost",
+        "version": "",
+        "risk": "LOW"
+      }
+    ],
+    "summary": {
+      "total_ports": 2,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 0
+      },
+      "attack_surface_score": {
+        "value": 6,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "diff": {
+      "summary": {
+        "current_open_ports": 2,
+        "previous_open_ports": 0,
+        "new_ports_open": 2,
+        "new_ports": 2,
+        "closed_ports": 0,
+        "changed_services": 0
+      },
+      "current_open_ports": 2,
+      "previous_open_ports": 0,
+      "new_ports_open": 2,
+      "new_ports": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "AkamaiGHost",
+          "version": "",
+          "risk": "LOW"
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "AkamaiGHost",
+          "version": "",
+          "risk": "LOW"
+        }
+      ],
+      "closed_ports": [],
+      "changed_services": []
+    },
+    "baseline": {
+      "timestamp": "20260506T030434Z",
+      "profile": "network-basic",
+      "target": "https://www.gsk.com"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "target": "pharmapackages.com.pk",
+  "profile": "web-focused",
+  "timestamp": "20260425T023121Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://pharmapackages.com.pk",
+        "http://pharmapackages.com.pk"
+      ],
+      "technologies": [
+        {
+          "name": "Country",
+          "value": "UNITED STATES [US]",
+          "version": "UNITED STATES [US]"
+        },
+        {
+          "name": "Email",
+          "value": "info@pharmapackages.com.pk",
+          "version": "info@pharmapackages.com.pk"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "value": "LiteSpeed",
+          "version": "LiteSpeed"
+        },
+        {
+          "name": "IP",
+          "value": "64.20.34.139",
+          "version": "64.20.34.139"
+        },
+        {
+          "name": "JQuery",
+          "value": "3.7.1",
+          "version": "3.7.1"
+        },
+        {
+          "name": "LiteSpeed",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "MetaGenerator",
+          "value": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap",
+          "version": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        },
+        {
+          "name": "RedirectLocation",
+          "value": "https://pharmapackages.com.pk/",
+          "version": "https://pharmapackages.com.pk/"
+        },
+        {
+          "name": "RedirectLocation",
+          "value": "https://www.pharmapackages.com.pk/",
+          "version": "https://www.pharmapackages.com.pk/"
+        },
+        {
+          "name": "Script",
+          "value": "speculationrules",
+          "version": "speculationrules"
+        },
+        {
+          "name": "Script",
+          "value": "text/template",
+          "version": "text/template"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload",
+          "version": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "name": "Title",
+          "value": "301 Moved Permanently [Title element contains newline(s)!]",
+          "version": "301 Moved Permanently [Title element contains newline(s)!]"
+        },
+        {
+          "name": "Title",
+          "value": "Pharma Packages &#8211; Pharmaceutical Company",
+          "version": "Pharma Packages &#8211; Pharmaceutical Company"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc",
+          "version": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "x-redirect-by,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc",
+          "version": "x-redirect-by,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc"
+        },
+        {
+          "name": "WordPress",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "SAMEORIGIN",
+          "version": "SAMEORIGIN"
+        }
+      ],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "ok",
+      "targets_tested": [
+        "https://pharmapackages.com.pk",
+        "http://pharmapackages.com.pk"
+      ],
+      "paths_tested": 12,
+      "findings": [
+        {
+          "url": "https://pharmapackages.com.pk/admin",
+          "path": "admin",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/admin"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/backup",
+          "path": "backup",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/backup"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/dashboard",
+          "path": "dashboard",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/dashboard"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/login",
+          "path": "login",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/login"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/uploads",
+          "path": "uploads",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/uploads"
+        }
+      ],
+      "errors": [
+        "https://pharmapackages.com.pk/config: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /config (Caused by NewConnectionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to establish a new connection: [WinError 10053] An established connection was aborted by the software in your host machine\"))",
+        "https://pharmapackages.com.pk/phpinfo.php: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /phpinfo.php (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "https://pharmapackages.com.pk/.env: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /.env (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "https://pharmapackages.com.pk/robots.txt: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "https://pharmapackages.com.pk/sitemap.xml: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "https://pharmapackages.com.pk/api: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "https://pharmapackages.com.pk/test: HTTPSConnectionPool(host='pharmapackages.com.pk', port=443): Max retries exceeded with url: /test (Caused by NameResolutionError(\"HTTPSConnection(host='pharmapackages.com.pk', port=443): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/admin: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /admin (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/login: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /login (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/dashboard: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /dashboard (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/uploads: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /uploads (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/backup: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /backup (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/config: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /config (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/phpinfo.php: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /phpinfo.php (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/.env: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /.env (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/robots.txt: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/sitemap.xml: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/api: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /api (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))",
+        "http://pharmapackages.com.pk/test: HTTPConnectionPool(host='pharmapackages.com.pk', port=80): Max retries exceeded with url: /test (Caused by NameResolutionError(\"HTTPConnection(host='pharmapackages.com.pk', port=80): Failed to resolve 'pharmapackages.com.pk' ([Errno 11001] getaddrinfo failed)\"))"
+      ]
+    }
+  }
+}

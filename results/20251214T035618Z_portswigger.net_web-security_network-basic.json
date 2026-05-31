@@ -1,0 +1,17 @@
+{
+  "target": "portswigger.net/web-security",
+  "profile": "network-basic",
+  "timestamp": "20251214T035618Z",
+  "data": {
+    "ports": [],
+    "summary": {
+      "total_ports": 0,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "UNKNOWN": 0
+      }
+    }
+  }
+}

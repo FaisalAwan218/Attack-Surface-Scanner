@@ -1,0 +1,135 @@
+{
+  "target": "web.uaf.edu.pk",
+  "profile": "network-basic",
+  "timestamp": "20251210T032748Z",
+  "data": {
+    "ports": [
+      {
+        "port": 22,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ssh",
+        "product": "OpenSSH",
+        "version": "8.9p1 Ubuntu 3ubuntu0.13",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Microsoft HTTPAPI httpd",
+        "version": "2.0",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "https",
+        "product": "",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 1433,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "ms-sql-s",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 4445,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Microsoft IIS httpd",
+        "version": "8.5",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 4446,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "Microsoft IIS httpd",
+        "version": "8.5",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 5050,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ms-wbt-server",
+        "product": "Microsoft Terminal Services",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 7001,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ldap",
+        "product": "WebLogic application server",
+        "version": "14.1.1.0",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8001,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "vcom-tunnel",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8010,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "xmpp",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8081,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "blackice-icecap",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8090,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "opsmessaging",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 13,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 1,
+        "LOW": 2,
+        "UNKNOWN": 10
+      }
+    }
+  }
+}

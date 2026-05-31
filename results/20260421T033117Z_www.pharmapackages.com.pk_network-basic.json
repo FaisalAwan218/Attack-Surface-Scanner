@@ -1,0 +1,122 @@
+{
+  "target": "www.pharmapackages.com.pk",
+  "profile": "network-basic",
+  "timestamp": "20260421T033117Z",
+  "data": {
+    "ports": [
+      {
+        "port": 21,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "ftp",
+        "product": "Pure-FTPd",
+        "version": "",
+        "risk": "HIGH"
+      },
+      {
+        "port": 53,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "tcpwrapped",
+        "product": "",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 110,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 143,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "MEDIUM"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 465,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.99.1",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 587,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "smtp",
+        "product": "Exim smtpd",
+        "version": "4.99.1",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 993,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "imap",
+        "product": "Dovecot imapd",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 995,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "pop3",
+        "product": "Dovecot pop3d",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 2222,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "EtherNetIP-1",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 11,
+      "risk_counts": {
+        "HIGH": 1,
+        "MEDIUM": 3,
+        "LOW": 2,
+        "UNKNOWN": 5
+      },
+      "attack_surface_score": {
+        "value": 63,
+        "level": "MEDIUM",
+        "method": "weighted-port-risk"
+      }
+    }
+  }
+}

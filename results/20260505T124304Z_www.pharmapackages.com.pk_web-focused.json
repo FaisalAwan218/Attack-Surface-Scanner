@@ -1,0 +1,216 @@
+{
+  "target": "www.pharmapackages.com.pk",
+  "profile": "web-focused",
+  "timestamp": "20260505T124304Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk",
+        "http://www.pharmapackages.com.pk"
+      ],
+      "technologies": [
+        {
+          "name": "Country",
+          "value": "UNITED STATES [US]",
+          "version": "UNITED STATES [US]"
+        },
+        {
+          "name": "HTTPServer",
+          "value": "openresty/1.27.1.1",
+          "version": "openresty/1.27.1.1"
+        },
+        {
+          "name": "IP",
+          "value": "64.20.34.139",
+          "version": "64.20.34.139"
+        },
+        {
+          "name": "OpenResty",
+          "value": "1.27.1.1",
+          "version": "1.27.1.1"
+        },
+        {
+          "name": "Title",
+          "value": "415 Unsupported Media Type",
+          "version": "415 Unsupported Media Type"
+        }
+      ],
+      "errors": []
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "error",
+      "targets_tested": [
+        "https://www.pharmapackages.com.pk",
+        "http://www.pharmapackages.com.pk"
+      ],
+      "paths_tested": 101,
+      "findings": [],
+      "errors": [
+        "https://www.pharmapackages.com.pk/manager: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /manager (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2a490>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "https://www.pharmapackages.com.pk/panel: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /panel (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2bb10>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "https://www.pharmapackages.com.pk/server-status: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /server-status (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2b110>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "https://www.pharmapackages.com.pk/test: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /test (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2b610>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "https://www.pharmapackages.com.pk/v1: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /v1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2ac10>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "https://www.pharmapackages.com.pk/v2: HTTPSConnectionPool(host='www.pharmapackages.com.pk', port=443): Max retries exceeded with url: /v2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pharmapackages.com.pk', port=443) at 0x24d84f2ae90>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/admin: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /admin (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d84f6dbe0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/administrator: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /administrator (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d84f2b890>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/api: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /api (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d84f2aad0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/assets: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /assets (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8540c3e0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/backup: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /backup (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8540c640>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/backups: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /backups (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d84f59250>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/bin: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /bin (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85421040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/cgi-bin: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /cgi-bin (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85421590>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/config: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /config (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854218c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/conf: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /conf (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85421d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/cms: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /cms (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85422140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/core: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /core (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85422580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/css: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /css (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854229c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/data: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /data (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85422e00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/db: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /db (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85423240>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/database: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /database (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85423680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/dev: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /dev (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85423ac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/dist: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /dist (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85423f00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/download: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /download (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85478380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/downloads: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /downloads (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854787c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/etc: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /etc (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85478c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/files: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /files (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85479040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/fonts: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /fonts (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85479480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/git: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /git (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854798c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/images: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /images (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85479d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/img: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /img (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547a140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/inc: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /inc (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547a580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/include: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /include (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547a9c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/includes: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /includes (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547ae00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/index: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /index (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547b240>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/install: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /install (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547b680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/js: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /js (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547bac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/javascript: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /javascript (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8547bf00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/lib: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /lib (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c4380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/libs: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /libs (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c47c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/logs: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /logs (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c4c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/login: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /login (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c5040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/logout: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /logout (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c5480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/mail: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /mail (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c58c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/media: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /media (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c5d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/modules: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /modules (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c6140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/mysql: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /mysql (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c6580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/node_modules: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /node_modules (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c69c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/old: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /old (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c6e00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/output: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /output (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c7240>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/php: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /php (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c7680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/plugins: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /plugins (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c7ac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/private: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /private (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d854c7f00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/public: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /public (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85518380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/pub: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /pub (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855187c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/scripts: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /scripts (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85518c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/src: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /src (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85519040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/static: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /static (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85519480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/styles: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /styles (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855198c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/system: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /system (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85519d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/temp: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /temp (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551a140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/tmp: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /tmp (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551a580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/upload: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /upload (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551a9c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/uploads: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /uploads (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551ae00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/usr: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /usr (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551b240>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/var: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /var (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551b680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/vendor: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /vendor (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551bac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/video: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /video (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d8551bf00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/web: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /web (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85570380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/webdav: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /webdav (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855707c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/www: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /www (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85570c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/xml: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /xml (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85571040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.git: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.git (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85571480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.env: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.env (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855718c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.htaccess: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.htaccess (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85571d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.ssh: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.ssh (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85572140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.svn: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.svn (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85572580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/.vscode: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /.vscode (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855729c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/robots.txt: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85572e00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/sitemap.xml: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85573240>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/README.md: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /README.md (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85573680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/LICENSE: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /LICENSE (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85573ac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/composer.json: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /composer.json (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85573f00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/package.json: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /package.json (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c4380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/wp-admin: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /wp-admin (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c47c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/wp-content: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /wp-content (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c4c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/wp-includes: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /wp-includes (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c5040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/administrator/index.php: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /administrator/index.php (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c5480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/api/v1: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /api/v1 (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c59d0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/api/v2: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /api/v2 (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c5d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/app/config: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /app/config (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c6140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/assets/js: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /assets/js (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c6580>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/backup.sql: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /backup.sql (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c69c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/cgi-bin/test.cgi: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /cgi-bin/test.cgi (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c6e00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/config.php: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /config.php (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c7350>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/dashboard: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /dashboard (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c7680>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/db.sql: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /db.sql (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c7ac0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/debug: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /debug (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d855c7f00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/error: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /error (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85610380>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/hidden: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /hidden (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d856107c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/manager: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /manager (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85610c00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/panel: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /panel (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85611040>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/server-status: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /server-status (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85611480>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/test: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /test (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d856118c0>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/v1: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /v1 (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85611d00>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))",
+        "http://www.pharmapackages.com.pk/v2: HTTPConnectionPool(host='www.pharmapackages.com.pk', port=80): Max retries exceeded with url: /v2 (Caused by ConnectTimeoutError(<HTTPConnection(host='www.pharmapackages.com.pk', port=80) at 0x24d85612140>, 'Connection to www.pharmapackages.com.pk timed out. (connect timeout=5)'))"
+      ]
+    }
+  }
+}

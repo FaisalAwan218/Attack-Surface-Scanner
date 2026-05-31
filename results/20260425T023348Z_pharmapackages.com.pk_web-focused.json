@@ -1,0 +1,363 @@
+{
+  "target": "pharmapackages.com.pk",
+  "profile": "web-focused",
+  "timestamp": "20260425T023348Z",
+  "data": {
+    "ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 443,
+        "protocol": "tcp",
+        "state": "open",
+        "service": "http",
+        "product": "LiteSpeed httpd",
+        "version": "",
+        "risk": "LOW"
+      },
+      {
+        "port": 8080,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "http-proxy",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      },
+      {
+        "port": 8443,
+        "protocol": "tcp",
+        "state": "closed",
+        "service": "https-alt",
+        "product": "",
+        "version": "",
+        "risk": "UNKNOWN"
+      }
+    ],
+    "summary": {
+      "total_ports": 4,
+      "risk_counts": {
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 2,
+        "UNKNOWN": 2
+      },
+      "attack_surface_score": {
+        "value": 16,
+        "level": "LOW",
+        "method": "weighted-port-risk"
+      }
+    },
+    "web": {
+      "enabled": true,
+      "tool": "whatweb",
+      "status": "ok",
+      "targets_tested": [
+        "https://pharmapackages.com.pk",
+        "http://pharmapackages.com.pk"
+      ],
+      "technologies": [
+        {
+          "name": "Country",
+          "value": "UNITED STATES [US]",
+          "version": "UNITED STATES [US]"
+        },
+        {
+          "name": "Email",
+          "value": "info@pharmapackages.com.pk",
+          "version": "info@pharmapackages.com.pk"
+        },
+        {
+          "name": "HTML5",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "HTTPServer",
+          "value": "LiteSpeed",
+          "version": "LiteSpeed"
+        },
+        {
+          "name": "IP",
+          "value": "64.20.34.139",
+          "version": "64.20.34.139"
+        },
+        {
+          "name": "JQuery",
+          "value": "3.7.1",
+          "version": "3.7.1"
+        },
+        {
+          "name": "LiteSpeed",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "MetaGenerator",
+          "value": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap",
+          "version": "Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        },
+        {
+          "name": "RedirectLocation",
+          "value": "https://www.pharmapackages.com.pk/",
+          "version": "https://www.pharmapackages.com.pk/"
+        },
+        {
+          "name": "Script",
+          "value": "speculationrules",
+          "version": "speculationrules"
+        },
+        {
+          "name": "Script",
+          "value": "text/template",
+          "version": "text/template"
+        },
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload",
+          "version": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "name": "Title",
+          "value": "Pharma Packages &#8211; Pharmaceutical Company",
+          "version": "Pharma Packages &#8211; Pharmaceutical Company"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc",
+          "version": "link,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc"
+        },
+        {
+          "name": "UncommonHeaders",
+          "value": "x-redirect-by,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc",
+          "version": "x-redirect-by,x-litespeed-cache,x-content-type-options,expect-ct,referrer-policy,alt-svc"
+        },
+        {
+          "name": "WordPress",
+          "value": "",
+          "version": ""
+        },
+        {
+          "name": "X-Frame-Options",
+          "value": "SAMEORIGIN",
+          "version": "SAMEORIGIN"
+        }
+      ],
+      "errors": [
+        "Timeout while fingerprinting http://pharmapackages.com.pk."
+      ]
+    },
+    "dir_enum": {
+      "enabled": true,
+      "tool": "directory-enumeration",
+      "status": "ok",
+      "targets_tested": [
+        "https://pharmapackages.com.pk",
+        "http://pharmapackages.com.pk"
+      ],
+      "paths_tested": 12,
+      "findings": [
+        {
+          "url": "http://pharmapackages.com.pk/.env",
+          "path": ".env",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/.env"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/admin",
+          "path": "admin",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/admin"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/api",
+          "path": "api",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/api"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/backup",
+          "path": "backup",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/backup"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/config",
+          "path": "config",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/config"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/dashboard",
+          "path": "dashboard",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/dashboard"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/login",
+          "path": "login",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/login"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/phpinfo.php",
+          "path": "phpinfo.php",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/phpinfo.php"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/robots.txt",
+          "path": "robots.txt",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/robots.txt"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/sitemap.xml",
+          "path": "sitemap.xml",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/sitemap.xml"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/test",
+          "path": "test",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/test"
+        },
+        {
+          "url": "http://pharmapackages.com.pk/uploads",
+          "path": "uploads",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "795",
+          "location": "https://pharmapackages.com.pk/uploads"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/admin",
+          "path": "admin",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/admin"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/api",
+          "path": "api",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/api"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/backup",
+          "path": "backup",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/backup"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/config",
+          "path": "config",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/config"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/dashboard",
+          "path": "dashboard",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/dashboard"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/login",
+          "path": "login",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/login"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/phpinfo.php",
+          "path": "phpinfo.php",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/phpinfo.php"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/robots.txt",
+          "path": "robots.txt",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/robots.txt"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/sitemap.xml",
+          "path": "sitemap.xml",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/wp-sitemap.xml"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/test",
+          "path": "test",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/test"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/uploads",
+          "path": "uploads",
+          "status_code": 301,
+          "reason": "Moved Permanently",
+          "content_length": "0",
+          "location": "https://www.pharmapackages.com.pk/uploads"
+        },
+        {
+          "url": "https://pharmapackages.com.pk/.env",
+          "path": ".env",
+          "status_code": 403,
+          "reason": "Forbidden",
+          "content_length": "1242",
+          "location": ""
+        }
+      ],
+      "errors": []
+    }
+  }
+}
