@@ -193,5 +193,5 @@ Overall Completion	                                 ~90%
 
 ## 8. Author
 M. Faisal
-BS-IT (7th Semester) Sec. A
+BS-IT (8th Semester) Sec. A
 University of Agriculture Faisalabad
